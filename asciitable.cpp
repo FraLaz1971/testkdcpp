@@ -24,6 +24,37 @@ ASCIITable::ASCIITable()
 
 }
 
+ASCIITable::ASCIITable(const char* infile,int nrows, int ncols)
+{
+    rows = nrows;
+    cols = ncols;
+    rowcount = 0;
+    buffer = (char *)malloc(bufsize * sizeof(char));
+    if( buffer == NULL)
+    {
+        perror("Unable to allocate buffer");
+        exit(1);
+    }
+    ifname = (char *)infile;
+    ifp=fopen(ifname, "r");
+	while (nchar != EOF)
+    	{
+	        nchar = getline(&buffer,&bufsize,ifp);
+		if (nchar==EOF) break;
+            ret = parserow(buffer, ncols+1);
+	    	fprintf(stderr,"ASCIITable() %zu characters read.\n",nline);
+	    	fprintf(stderr,"ASCIITable() row#%d='%s'\n",nline++,buffer);
+        }
+        fclose(ifp);
+        free(buffer);
+    if (ret > 0 ){
+        fprintf(stderr, "%s.ASCIITable::ASCIITable() all ok\n", "testkdcpp");
+    } else {
+        fprintf(stderr, "%s.ASCIITable::ASCIITable() error\n", "testkdcpp");
+    }
+
+}
+
 ASCIITable::ASCIITable(int nrows, int ncols)
 {
     rows = nrows;
@@ -35,7 +66,13 @@ ASCIITable::~ASCIITable()
 
 }
 
-void ASCIITable::dump()
+
+int ASCIITable::read(const FILE *inf)
+{
+    return 0;
+}
+
+int ASCIITable::dump()
 {
     int i,j;
     cerr << "ASCIITable::dump() execution START"<< endl;
@@ -48,4 +85,32 @@ void ASCIITable::dump()
         cout << endl;
     }
     cerr << "ASCIITable::dump() execution STOP"<< endl;
+    return 0;
+}
+
+int ASCIITable::parserow(char *mybuffer, int mncols){
+                fprintf(stderr,"parserow() START\n");
+                cc=0; fcharcount=0;colcount=0;
+                fbuffer = (char *)malloc(bufsize * sizeof(char));
+                while( mybuffer[cc] != RS ){ /* while characters of the row */
+                        if ( (mybuffer[cc] != FS) ){
+                                temp[fcharcount] = mybuffer[cc];
+                                fcharcount++;
+                        } else {
+                                fprintf(stderr,"parserow() %s%c ", temp, OFS);
+                                fprintf(stderr,"temp =%s atof:%lf ", temp, atof(temp));
+                                data[nline][colcount]=atof(temp);
+                                 strcpy(temp,    "               \0");
+//                                 strcpy(mybuffer,"               \0");
+                                colcount++;
+                                fcharcount=0;
+                        }
+                        cc++;
+                }
+                data[nline][colcount]=atof(temp);
+                strcpy(temp,    "               \0");
+                fprintf(stderr,"%c%c", '\r',ORS);
+                colcount++;
+                free(fbuffer);
+                fprintf(stderr,"parserow() STOP\n");
 }
