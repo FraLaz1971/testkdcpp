@@ -1,7 +1,7 @@
 SHELL = bash
 CXX = g++
 INCLUDES=-I.
-CPPFLAGS=$(INCLUDES)
+CPPFLAGS=$(INCLUDES) $(DBFLAG)
 CXXFLAGS=-Wall -g -O
 RM = rm -f
 CP = cp
@@ -21,13 +21,18 @@ all: $(TARGET1)$(EEXT)
 debug: main.cpp asciitable.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -DDEBUG -o $@ $?
 
+main$(OEXT): main.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS)  -o $@ -c $<
 
-$(TARGET1)$(EEXT): main.cpp asciitable.cpp
+asciitable$(OEXT): asciitable.cpp defines.h errvals.h
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS)  -o $@ -c $<
+
+$(TARGET1)$(EEXT): main.o asciitable.o
 
 	$(CXX) -o $@ $?
 
 
-install: all
+install: all debug
 	@if ! test -d bin; then mkdir bin; fi	
 	@$(INSTALL) $(TARGETS) bin
 

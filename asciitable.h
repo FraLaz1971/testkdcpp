@@ -75,13 +75,13 @@ public:
     int rows;
     int cols;
     char *buffer;
-    char *ifname;
+    char *ifname=(char*)"table.asc";
     FILE *ifp; 
     int ret; 
     int nline=0;
     int colcount=0;
     int rowcount=0;    
-    size_t nchar=0;
+    int nchar=0;
     FILE *ptr;  /* Pointer to the data file. FILE is a structure defined in <stdio.h> */
     FILE *mptr; /* Pointer to the metadata file. FILE is a structure defined in <stdio.h> */
     int c; /* Character read from the file. */

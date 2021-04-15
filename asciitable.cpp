@@ -21,7 +21,12 @@
 
 ASCIITable::ASCIITable()
 {
-
+        #ifdef DEBUG
+        fprintf(stderr, "ASCIITable() created\n");    
+        fprintf(stderr, "ASCIITable() using default file %s\n", ifname);    
+        #endif
+        cols=3;
+        rows=3;
 }
 
 ASCIITable::ASCIITable(const char* infile,int nrows, int ncols)
@@ -53,8 +58,8 @@ ASCIITable::ASCIITable(const char* infile,int nrows, int ncols)
             if (nchar==EOF) break;
             ret = parserow(buffer, ncols+1);
             #ifdef DEBUG
-	    	fprintf(stderr,"ASCIITable() %zu characters read.\n",nline);
-	    	fprintf(stderr,"ASCIITable() row#%d='%s'\n",nline,buffer);
+	    	fprintf(stderr,"ASCIITable() %d characters read.\n",nline);
+	    	fprintf(stderr,"ASCIITable() row#%d='%s'\n",nline,(char*)buffer);
             #endif
             nline++;
         }
@@ -71,12 +76,30 @@ ASCIITable::ASCIITable(int nrows, int ncols)
 
 ASCIITable::~ASCIITable()
 {
-
+        fprintf(stderr, "~ASCIITable() used default file %s\n", ifname);    
+        fprintf(stderr, "~ASCIITable() destroyed\n");    
 }
 
 
 int ASCIITable::read(const FILE *inf)
 {
+    colcount=0; rowcount=0;int mn=0;
+    inf = fopen(ifname, "r"); 
+    do {
+        ret = fscanf((FILE *)inf,"%s",(char*)&temp);
+        #ifdef DEBUG
+        fprintf(stderr, "ASCIITable::read() %d item(s) value=%s\n", ret,(char*)&temp);
+        #endif
+        colcount=mn%cols;
+        rowcount=mn/rows;
+        #ifdef DEBUG
+        fprintf(stderr, "ASCIITable::read()mn:%d(row:%d,col:%d)  value=%g\n",mn,
+ rowcount,colcount,atof(temp));
+        #endif
+        data[rowcount][colcount] = atof(temp);
+        mn++;
+    } while (ret != EOF);
+    fclose((FILE *)inf);
     return 0;
 }
 
@@ -120,6 +143,7 @@ int ASCIITable::parserow(char *mybuffer, int mncols){
                                 data[nline][colcount]=atof(temp);
                                  strcpy(temp,    "               \0");
 //                                 strcpy(mybuffer,"               \0");
+                                fprintf(stderr,"row n.%d col n.%d, ", nline,colcount);
                                 colcount++;
                                 fcharcount=0;
                         }
@@ -129,10 +153,16 @@ int ASCIITable::parserow(char *mybuffer, int mncols){
                 strcpy(temp,    "               \0");
                 #ifdef DEBUG
                 fprintf(stderr,"%c%c", '\r',ORS);
+                if (colcount != mncols){
+                    fprintf(stderr,"parserow() n. of columns processed is different from the expected number%c%c", '\r',ORS);
+                    return 1;
+                }
                 #endif
+                fprintf(stderr,"parserow() row n.%d col n.%d%c%c", nline,colcount,'\r',ORS);
                 colcount++;
                 free(fbuffer);
                 #ifdef DEBUG
                 fprintf(stderr,"parserow() STOP\n");
                 #endif
+                return 0;
 }
