@@ -4,6 +4,8 @@ OEXT = .o
 TARGET1 = testkdcpp
 TARGETS = $(TARGET1)
 CC = g++
+.PHONY = all clean run
+BINDIR = ./
 
 $(TARGET1)$(EEXT): main.cpp asciitable.cpp
 
@@ -11,3 +13,5 @@ $(TARGET1)$(EEXT): main.cpp asciitable.cpp
 clean:
 	$(RM) testkdcpp
 
+run:
+	$(BINDIR)testkdcpp

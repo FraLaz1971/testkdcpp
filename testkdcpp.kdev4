@@ -1,3 +1,5 @@
 [Project]
 Manager=KDevCustomMakeManager
 Name=testkdcpp
+VersionControlSupport=kdevgit
+
