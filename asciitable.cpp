@@ -32,26 +32,34 @@ ASCIITable::ASCIITable(const char* infile,int nrows, int ncols)
     buffer = (char *)malloc(bufsize * sizeof(char));
     if( buffer == NULL)
     {
-        perror("Unable to allocate buffer");
+        perror("ASCIITable() Unable to allocate buffer");
         exit(1);
     }
-    ifname = (char *)infile;
+    ifname = (char *) infile;
     ifp=fopen(ifname, "r");
+    if (ifp != NULL ){
+        /*all ok */
+        #ifdef DEBUG
+        fprintf(stderr, "%s.ASCIITable::ASCIITable() all ok\n", "testkdcpp");
+        #endif
+    } else {
+        fprintf(stderr, "%s.ASCIITable::ASCIITable() error in opening file %s\n", "testkdcpp", ifname);
+        exit(EX_NOINPUT);
+    }
+
 	while (nchar != EOF)
     	{
 	        nchar = getline(&buffer,&bufsize,ifp);
-		if (nchar==EOF) break;
+            if (nchar==EOF) break;
             ret = parserow(buffer, ncols+1);
+            #ifdef DEBUG
 	    	fprintf(stderr,"ASCIITable() %zu characters read.\n",nline);
-	    	fprintf(stderr,"ASCIITable() row#%d='%s'\n",nline++,buffer);
+	    	fprintf(stderr,"ASCIITable() row#%d='%s'\n",nline,buffer);
+            #endif
+            nline++;
         }
         fclose(ifp);
         free(buffer);
-    if (ret > 0 ){
-        fprintf(stderr, "%s.ASCIITable::ASCIITable() all ok\n", "testkdcpp");
-    } else {
-        fprintf(stderr, "%s.ASCIITable::ASCIITable() error\n", "testkdcpp");
-    }
 
 }
 
@@ -75,21 +83,29 @@ int ASCIITable::read(const FILE *inf)
 int ASCIITable::dump()
 {
     int i,j;
+    #ifdef DEBUG
     cerr << "ASCIITable::dump() execution START"<< endl;
+    #endif
     for (i=0; i<rows; i++){
         for (j=0; j<cols; j++){
+            #ifdef DEBUG
             cerr << "ASCIITable::dump() data("<< i << "," << j << ")"<< \
             "="<< data[i][j] << endl;        
+            #endif
             cout << data[i][j] << " ";
         }
         cout << endl;
     }
+    #ifdef DEBUG
     cerr << "ASCIITable::dump() execution STOP"<< endl;
+    #endif
     return 0;
 }
 
 int ASCIITable::parserow(char *mybuffer, int mncols){
+                #ifdef DEBUG
                 fprintf(stderr,"parserow() START\n");
+                #endif
                 cc=0; fcharcount=0;colcount=0;
                 fbuffer = (char *)malloc(bufsize * sizeof(char));
                 while( mybuffer[cc] != RS ){ /* while characters of the row */
@@ -97,8 +113,10 @@ int ASCIITable::parserow(char *mybuffer, int mncols){
                                 temp[fcharcount] = mybuffer[cc];
                                 fcharcount++;
                         } else {
-                                fprintf(stderr,"parserow() %s%c ", temp, OFS);
+                                #ifdef DEBUG
+                                fprintf(stderr,"%s%c ", temp, OFS);
                                 fprintf(stderr,"temp =%s atof:%lf ", temp, atof(temp));
+                                #endif
                                 data[nline][colcount]=atof(temp);
                                  strcpy(temp,    "               \0");
 //                                 strcpy(mybuffer,"               \0");
@@ -109,8 +127,12 @@ int ASCIITable::parserow(char *mybuffer, int mncols){
                 }
                 data[nline][colcount]=atof(temp);
                 strcpy(temp,    "               \0");
+                #ifdef DEBUG
                 fprintf(stderr,"%c%c", '\r',ORS);
+                #endif
                 colcount++;
                 free(fbuffer);
+                #ifdef DEBUG
                 fprintf(stderr,"parserow() STOP\n");
+                #endif
 }

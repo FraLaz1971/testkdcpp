@@ -1,14 +1,16 @@
 #include <iostream>
 #include "asciitable.h"
 #include "defines.h"
-using namespace std;
 
 int main(int argc, char **argv)
 {
-    std::cout << "Hello, world!" << std::endl;
-    char * fn = (char *)"table.asc";
-    ASCIITable *at = new ASCIITable(fn,3,3);
-    //ASCIITable *at = new ASCIITable();
+    if (argc == 4){
+    char * fn = argv[1];
+    ASCIITable *at = new ASCIITable(fn,atoi(argv[2]),atoi(argv[3]));
     at->dump();
     return 0;
+    } else {
+        std::cerr << "usage:"<<argv[0]<< "<infile> <nrows> <ncols>"<< std::endl;
+        return EX_BADARGS;
+    }
 }
