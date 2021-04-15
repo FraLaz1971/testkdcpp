@@ -1,3 +1,4 @@
+SHELL = bash
 CXX = g++
 INCLUDES=-I.
 CPPFLAGS=$(INCLUDES)
@@ -26,16 +27,18 @@ $(TARGET1)$(EEXT): main.cpp asciitable.cpp
 	$(CXX) -o $@ $?
 
 
-
 install: all
-	if ! test -d bin; then mkdir bin; fi	
-	$(INSTALL) $(TARGETS) bin
+	@if ! test -d bin; then mkdir bin; fi	
+	@$(INSTALL) $(TARGETS) bin
 
 clean:
 	$(RM) $(TARGETS) $(OBJS)
 
 distclean: clean
-	$(RM) $(BINDIR)
+	$(RM) $(BINDIR)*
 
-run: install
-	$(BINDIR)testkdcpp 3 2 2>err.log
+run: install debug
+	@$(SRCDIR)/run.sh table.asc 3 2
+
+rundbg: install debug
+	$(SRCDIR)debug table.asc 3 2
