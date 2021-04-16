@@ -47,9 +47,10 @@ EX_NOPERM=77	#/** permission denied *#/*
 EX_CONFIG=78	#/** configuration error *#/*
 EX__MAX=78	#/* maximum listed value */
 ## mendel cooper abs guide example exit codes
-E_BADARGS=85          # Wrong number of arguments
-E_ARGSLIMITS=86       # an argument is out of allowed limits
-E_UNSUPPORTED=87      # unsupported system
+EX_BADARGS=85          # Wrong number of arguments
+EX_ARGSLIMITS=86       # an argument is out of allowed limits
+EX_UNSUPPORTED=87      # unsupported system
+EX_DENIED=126          # permission denied
 
 
 error_what(){

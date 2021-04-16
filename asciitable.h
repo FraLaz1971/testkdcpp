@@ -1,7 +1,9 @@
-/*
- * <one line to give the program's name and a brief idea of what it does.>
- * Copyright (C) 2021  Francesco Lazzarotto <francesco.lazzarotto@iaps.inaf.it>
- *
+/**
+ * @file asciitable.h 
+ * @Copyright (C) 2021  Francesco Lazzarotto   
+ * @email <francesco.lazzarotto@iaps.inaf.it>
+ * @link https:/github.com/FraLaz1971
+ * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -13,7 +15,8 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  
+ * If not, see @link <http://www.gnu.org/licenses/>.
  */
 
 #ifndef ASCIITABLE_H
@@ -34,29 +37,33 @@ using namespace std;
 #define OFS ','     /* output field (column) separator */
 
 /**
- * @todo write docs
+ * @brief implements basic input/output operations
+ * on ascii table dataset
+ * 
  */
 class ASCIITable
 {
 public:
     
     /**
-     * @todo write docs
+     * @brief constructor: takes in input the file name to ber read, 
+     * the number of rows and the number of columns of the input table
+     * and soon read the file content into RAM memory to be processed
      */
     ASCIITable(const char* infile,int nrows, int ncols);
     /**
-     * @todo write docs
+     * @brief constructor: takes no arguments and do nothing
      */
-    ASCIITable();
+    ASCIITable(void);
 
     /**
-     * @todo write docs
+     * @brief constructor:
      */
     ASCIITable(int nrows, int ncols);
     /**
      * @todo write docs
      */
-    ~ASCIITable();
+    ~ASCIITable(void);
     
     /**
      * @todo write docs
@@ -65,7 +72,7 @@ public:
     /**
      * @todo write docs
      */
-    int dump();
+    int dump(void);
     /**
      * @todo write docs
      */
@@ -75,16 +82,23 @@ public:
     int rows;
     int cols;
     char *buffer;
+    /** @brief name of the input file that can be read and saved into
+     the ASCIITable in RAM */
     char *ifname=(char*)"table.asc";
+    /** @brief name of the output file that can be written saving into
+     the ASCIITable in RAM */
+    char *ofname=(char*)"otable.asc";
+    /** @brief input file object pointer */
     FILE *ifp; 
-    int ret; 
-    int nline=0;
-    int colcount=0;
-    int rowcount=0;    
+    int ret; /* return value for scan operations */ 
+    /** @todo check colcount / nline redundancy */
+    int nline=0; /* line counter */
+    int colcount=0; /* column counter when scanning the table */
+    int rowcount=0; /* row counter when scanning the table */   
     int nchar=0;
     FILE *ptr;  /* Pointer to the data file. FILE is a structure defined in <stdio.h> */
     FILE *mptr; /* Pointer to the metadata file. FILE is a structure defined in <stdio.h> */
-    int c; /* Character read from the file. */
+    int c;   /* Character read from the file. */
     int cc;  /* cc: chars counter */
     int totlines; /* saves the total n. of lines read */
     int totchars; /* saves the total n. of chars read */

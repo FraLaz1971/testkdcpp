@@ -40,7 +40,7 @@ clean:
 	$(RM) $(TARGETS) $(OBJS)
 
 distclean: clean
-	$(RM) $(BINDIR)*
+	$(RM) $(BINDIR)* *.log
 
 run: install debug
 	@$(SRCDIR)/run.sh table.asc 3 2

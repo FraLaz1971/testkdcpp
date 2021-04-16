@@ -1,7 +1,9 @@
-/*
- * <one line to give the program's name and a brief idea of what it does.>
- * Copyright (C) 2021  Francesco Lazzarotto <francesco.lazzarotto@iaps.inaf.it>
- *
+/**
+ * @file asciitable.cpp 
+ * @Copyright (C) 2021  Francesco Lazzarotto   
+ * @email <francesco.lazzarotto@iaps.inaf.it>
+ * @link https:/github.com/FraLaz1971
+ * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -13,24 +15,22 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  
+ * If not, see @link <http://www.gnu.org/licenses/>.
  */
-
 #include "asciitable.h"
 
 
-ASCIITable::ASCIITable()
-{
+ASCIITable::ASCIITable(void){
         #ifdef DEBUG
         fprintf(stderr, "ASCIITable() created\n");    
         fprintf(stderr, "ASCIITable() using default file %s\n", ifname);    
         #endif
         cols=3;
         rows=3;
-}
+} // ends ASCIITable::ASCIITable(void)
 
-ASCIITable::ASCIITable(const char* infile,int nrows, int ncols)
-{
+ASCIITable::ASCIITable(const char* infile,int nrows, int ncols){
     rows = nrows;
     cols = ncols;
     rowcount = 0;
@@ -66,23 +66,22 @@ ASCIITable::ASCIITable(const char* infile,int nrows, int ncols)
         fclose(ifp);
         free(buffer);
 
-}
+}// ends ASCIITable::ASCIITable(char *, int, int)
 
-ASCIITable::ASCIITable(int nrows, int ncols)
-{
+ASCIITable::ASCIITable(int nrows, int ncols){
     rows = nrows;
     cols = ncols;
-}
+}// ends ASCIITable::ASCIITable(int, int)
 
-ASCIITable::~ASCIITable()
-{
+ASCIITable::~ASCIITable(){
         fprintf(stderr, "~ASCIITable() used default file %s\n", ifname);    
         fprintf(stderr, "~ASCIITable() destroyed\n");    
-}
+        if (buffer != NULL) free(buffer);
+
+}// ends ~ASCIITable()
 
 
-int ASCIITable::read(const FILE *inf)
-{
+int ASCIITable::read(const FILE *inf){
     colcount=0; rowcount=0;int mn=0;
     inf = fopen(ifname, "r"); 
     do {
@@ -101,10 +100,9 @@ int ASCIITable::read(const FILE *inf)
     } while (ret != EOF);
     fclose((FILE *)inf);
     return 0;
-}
+} // ends ASCIITable::read()
 
-int ASCIITable::dump()
-{
+int ASCIITable::dump(){
     int i,j;
     #ifdef DEBUG
     cerr << "ASCIITable::dump() execution START"<< endl;
@@ -165,4 +163,4 @@ int ASCIITable::parserow(char *mybuffer, int mncols){
                 fprintf(stderr,"parserow() STOP\n");
                 #endif
                 return 0;
-}
+} // ends ASCIITable::parserow()
