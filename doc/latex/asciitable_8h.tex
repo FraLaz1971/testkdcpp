@@ -1,0 +1,92 @@
+\hypertarget{asciitable_8h}{}\section{asciitable.\+h File Reference}
+\label{asciitable_8h}\index{asciitable.\+h@{asciitable.\+h}}
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include \char`\"{}errvals.\+h\char`\"{}}\newline
+Include dependency graph for asciitable.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{asciitable_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classASCIITable}{A\+S\+C\+I\+I\+Table}
+\begin{DoxyCompactList}\small\item\em implements basic input/output operations on ascii table dataset \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{asciitable_8h_ad3273464643b12407cb405d8c298f943}{L\+M\+A\+X\+S\+I\+ZE}~64 /$\ast$ max allowed line length $\ast$/
+\item 
+\#define \hyperlink{asciitable_8h_a7de6f71b3f223ff342d8517e2706252d}{F\+S\+I\+ZE}~16     /$\ast$ max allowed number of characters in a field (cell) include \textquotesingle{}\textbackslash{}0\textquotesingle{} $\ast$/
+\item 
+\#define \hyperlink{asciitable_8h_af9520fdf42fc2eb129de2c594eb10505}{F\+M\+AX}~16      /$\ast$ max allowed number of fields (columns) in a row $\ast$/
+\item 
+\#define \hyperlink{asciitable_8h_a66d21d4cc0d35bfe93b68f7a5089eb8b}{R\+M\+AX}~16      /$\ast$ max allowed number of records (rows) in a file $\ast$/
+\item 
+\#define \hyperlink{asciitable_8h_af8903d8eea3868940c60af887473b152}{RS}~\textquotesingle{}\textbackslash{}n\textquotesingle{}     /$\ast$ (input) record (row) separator $\ast$/
+\item 
+\#define \hyperlink{asciitable_8h_a30588c5eca7c9cb6ebba02a0236f0119}{FS}~\textquotesingle{} \textquotesingle{}     /$\ast$ (input) field (column) separator $\ast$/
+\item 
+\#define \hyperlink{asciitable_8h_aba177a1850218eefd2e7dcd37982926e}{O\+RS}~\textquotesingle{}\textbackslash{}n\textquotesingle{}     /$\ast$ output record (row) separator $\ast$/
+\item 
+\#define \hyperlink{asciitable_8h_a6a9fc425927b28770e853b880dd11c5b}{O\+FS}~\textquotesingle{},\textquotesingle{}     /$\ast$ output field (column) separator $\ast$/
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+(C) 2021 Francesco Lazzarotto  \href{mailto:francesco.lazzarotto@iaps.inaf.it}{\tt francesco.\+lazzarotto@iaps.\+inaf.\+it} \hyperlink{}{This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details. You should have received a copy of the G\+NU General Public License along with this program. If not, see  \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}. }
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{asciitable_8h_af9520fdf42fc2eb129de2c594eb10505}\label{asciitable_8h_af9520fdf42fc2eb129de2c594eb10505}} 
+\index{asciitable.\+h@{asciitable.\+h}!F\+M\+AX@{F\+M\+AX}}
+\index{F\+M\+AX@{F\+M\+AX}!asciitable.\+h@{asciitable.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+AX}{FMAX}}
+{\footnotesize\ttfamily \#define F\+M\+AX~16      /$\ast$ max allowed number of fields (columns) in a row $\ast$/}
+
+\mbox{\Hypertarget{asciitable_8h_a30588c5eca7c9cb6ebba02a0236f0119}\label{asciitable_8h_a30588c5eca7c9cb6ebba02a0236f0119}} 
+\index{asciitable.\+h@{asciitable.\+h}!FS@{FS}}
+\index{FS@{FS}!asciitable.\+h@{asciitable.\+h}}
+\subsubsection{\texorpdfstring{FS}{FS}}
+{\footnotesize\ttfamily \#define FS~\textquotesingle{} \textquotesingle{}     /$\ast$ (input) field (column) separator $\ast$/}
+
+\mbox{\Hypertarget{asciitable_8h_a7de6f71b3f223ff342d8517e2706252d}\label{asciitable_8h_a7de6f71b3f223ff342d8517e2706252d}} 
+\index{asciitable.\+h@{asciitable.\+h}!F\+S\+I\+ZE@{F\+S\+I\+ZE}}
+\index{F\+S\+I\+ZE@{F\+S\+I\+ZE}!asciitable.\+h@{asciitable.\+h}}
+\subsubsection{\texorpdfstring{F\+S\+I\+ZE}{FSIZE}}
+{\footnotesize\ttfamily \#define F\+S\+I\+ZE~16     /$\ast$ max allowed number of characters in a field (cell) include \textquotesingle{}\textbackslash{}0\textquotesingle{} $\ast$/}
+
+\mbox{\Hypertarget{asciitable_8h_ad3273464643b12407cb405d8c298f943}\label{asciitable_8h_ad3273464643b12407cb405d8c298f943}} 
+\index{asciitable.\+h@{asciitable.\+h}!L\+M\+A\+X\+S\+I\+ZE@{L\+M\+A\+X\+S\+I\+ZE}}
+\index{L\+M\+A\+X\+S\+I\+ZE@{L\+M\+A\+X\+S\+I\+ZE}!asciitable.\+h@{asciitable.\+h}}
+\subsubsection{\texorpdfstring{L\+M\+A\+X\+S\+I\+ZE}{LMAXSIZE}}
+{\footnotesize\ttfamily \#define L\+M\+A\+X\+S\+I\+ZE~64 /$\ast$ max allowed line length $\ast$/}
+
+\mbox{\Hypertarget{asciitable_8h_a6a9fc425927b28770e853b880dd11c5b}\label{asciitable_8h_a6a9fc425927b28770e853b880dd11c5b}} 
+\index{asciitable.\+h@{asciitable.\+h}!O\+FS@{O\+FS}}
+\index{O\+FS@{O\+FS}!asciitable.\+h@{asciitable.\+h}}
+\subsubsection{\texorpdfstring{O\+FS}{OFS}}
+{\footnotesize\ttfamily \#define O\+FS~\textquotesingle{},\textquotesingle{}     /$\ast$ output field (column) separator $\ast$/}
+
+\mbox{\Hypertarget{asciitable_8h_aba177a1850218eefd2e7dcd37982926e}\label{asciitable_8h_aba177a1850218eefd2e7dcd37982926e}} 
+\index{asciitable.\+h@{asciitable.\+h}!O\+RS@{O\+RS}}
+\index{O\+RS@{O\+RS}!asciitable.\+h@{asciitable.\+h}}
+\subsubsection{\texorpdfstring{O\+RS}{ORS}}
+{\footnotesize\ttfamily \#define O\+RS~\textquotesingle{}\textbackslash{}n\textquotesingle{}     /$\ast$ output record (row) separator $\ast$/}
+
+\mbox{\Hypertarget{asciitable_8h_a66d21d4cc0d35bfe93b68f7a5089eb8b}\label{asciitable_8h_a66d21d4cc0d35bfe93b68f7a5089eb8b}} 
+\index{asciitable.\+h@{asciitable.\+h}!R\+M\+AX@{R\+M\+AX}}
+\index{R\+M\+AX@{R\+M\+AX}!asciitable.\+h@{asciitable.\+h}}
+\subsubsection{\texorpdfstring{R\+M\+AX}{RMAX}}
+{\footnotesize\ttfamily \#define R\+M\+AX~16      /$\ast$ max allowed number of records (rows) in a file $\ast$/}
+
+\mbox{\Hypertarget{asciitable_8h_af8903d8eea3868940c60af887473b152}\label{asciitable_8h_af8903d8eea3868940c60af887473b152}} 
+\index{asciitable.\+h@{asciitable.\+h}!RS@{RS}}
+\index{RS@{RS}!asciitable.\+h@{asciitable.\+h}}
+\subsubsection{\texorpdfstring{RS}{RS}}
+{\footnotesize\ttfamily \#define RS~\textquotesingle{}\textbackslash{}n\textquotesingle{}     /$\ast$ (input) record (row) separator $\ast$/}
+

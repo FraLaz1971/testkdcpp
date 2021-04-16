@@ -1,0 +1,242 @@
+\begin{theindex}
+
+  \item {$\sim$\+A\+S\+C\+I\+I\+Table}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{9}
+
+  \indexspace
+
+  \item {A\+S\+C\+I\+I\+Table}, \hyperpage{7}
+    \subitem {$\sim$\+A\+S\+C\+I\+I\+Table}, \hyperpage{9}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{8}
+    \subitem {buffer}, \hyperpage{10}
+    \subitem {bufsize}, \hyperpage{10}
+    \subitem {c}, \hyperpage{10}
+    \subitem {cc}, \hyperpage{10}
+    \subitem {characters}, \hyperpage{10}
+    \subitem {colcount}, \hyperpage{10}
+    \subitem {cols}, \hyperpage{10}
+    \subitem {data}, \hyperpage{10}
+    \subitem {dump}, \hyperpage{9}
+    \subitem {fbuffer}, \hyperpage{11}
+    \subitem {fcharcount}, \hyperpage{11}
+    \subitem {ff}, \hyperpage{11}
+    \subitem {field}, \hyperpage{11}
+    \subitem {ifname}, \hyperpage{11}
+    \subitem {ifp}, \hyperpage{11}
+    \subitem {mptr}, \hyperpage{11}
+    \subitem {nchar}, \hyperpage{12}
+    \subitem {nline}, \hyperpage{12}
+    \subitem {ofname}, \hyperpage{12}
+    \subitem {parserow}, \hyperpage{9}
+    \subitem {ptr}, \hyperpage{12}
+    \subitem {read}, \hyperpage{9}
+    \subitem {ret}, \hyperpage{12}
+    \subitem {rowcount}, \hyperpage{12}
+    \subitem {rows}, \hyperpage{12}
+    \subitem {temp}, \hyperpage{13}
+    \subitem {totchars}, \hyperpage{13}
+    \subitem {totlines}, \hyperpage{13}
+  \item {asciitable.\+h}, \hyperpage{15}
+    \subitem {F\+M\+AX}, \hyperpage{16}
+    \subitem {F\+S\+I\+ZE}, \hyperpage{16}
+    \subitem {FS}, \hyperpage{16}
+    \subitem {L\+M\+A\+X\+S\+I\+ZE}, \hyperpage{16}
+    \subitem {O\+FS}, \hyperpage{16}
+    \subitem {O\+RS}, \hyperpage{16}
+    \subitem {R\+M\+AX}, \hyperpage{17}
+    \subitem {RS}, \hyperpage{17}
+
+  \indexspace
+
+  \item {buffer}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{10}
+  \item {bufsize}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{10}
+
+  \indexspace
+
+  \item {c}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{10}
+  \item {cc}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{10}
+  \item {characters}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{10}
+  \item {colcount}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{10}
+  \item {cols}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{10}
+
+  \indexspace
+
+  \item {data}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{10}
+  \item {defines.\+h}, \hyperpage{17}
+  \item {dump}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{9}
+
+  \indexspace
+
+  \item {E\+X\+\_\+\+\_\+\+B\+A\+SE}
+    \subitem {errvals.\+h}, \hyperpage{19}
+  \item {E\+X\+\_\+\+\_\+\+M\+AX}
+    \subitem {errvals.\+h}, \hyperpage{19}
+  \item {E\+X\+\_\+\+A\+R\+G\+S\+L\+I\+M\+I\+TS}
+    \subitem {errvals.\+h}, \hyperpage{19}
+  \item {E\+X\+\_\+\+B\+A\+D\+A\+R\+GS}
+    \subitem {errvals.\+h}, \hyperpage{19}
+  \item {E\+X\+\_\+\+C\+A\+N\+T\+C\+R\+E\+AT}
+    \subitem {errvals.\+h}, \hyperpage{19}
+  \item {E\+X\+\_\+\+C\+O\+N\+F\+IG}
+    \subitem {errvals.\+h}, \hyperpage{19}
+  \item {E\+X\+\_\+\+D\+A\+T\+A\+E\+RR}
+    \subitem {errvals.\+h}, \hyperpage{19}
+  \item {E\+X\+\_\+\+D\+E\+N\+I\+ED}
+    \subitem {errvals.\+h}, \hyperpage{19}
+  \item {E\+X\+\_\+\+I\+O\+E\+RR}
+    \subitem {errvals.\+h}, \hyperpage{20}
+  \item {E\+X\+\_\+\+N\+O\+F\+I\+LE}
+    \subitem {errvals.\+h}, \hyperpage{20}
+  \item {E\+X\+\_\+\+N\+O\+H\+O\+ST}
+    \subitem {errvals.\+h}, \hyperpage{20}
+  \item {E\+X\+\_\+\+N\+O\+I\+N\+P\+UT}
+    \subitem {errvals.\+h}, \hyperpage{20}
+  \item {E\+X\+\_\+\+N\+O\+P\+E\+RM}
+    \subitem {errvals.\+h}, \hyperpage{20}
+  \item {E\+X\+\_\+\+N\+O\+U\+S\+ER}
+    \subitem {errvals.\+h}, \hyperpage{20}
+  \item {E\+X\+\_\+\+O\+S\+E\+RR}
+    \subitem {errvals.\+h}, \hyperpage{20}
+  \item {E\+X\+\_\+\+O\+S\+F\+I\+LE}
+    \subitem {errvals.\+h}, \hyperpage{21}
+  \item {E\+X\+\_\+\+OK}
+    \subitem {errvals.\+h}, \hyperpage{20}
+  \item {E\+X\+\_\+\+P\+R\+O\+T\+O\+C\+OL}
+    \subitem {errvals.\+h}, \hyperpage{21}
+  \item {E\+X\+\_\+\+S\+E\+G\+F\+A\+U\+LT}
+    \subitem {errvals.\+h}, \hyperpage{21}
+  \item {E\+X\+\_\+\+S\+O\+F\+T\+W\+A\+RE}
+    \subitem {errvals.\+h}, \hyperpage{21}
+  \item {E\+X\+\_\+\+S\+Y\+N\+E\+RR}
+    \subitem {errvals.\+h}, \hyperpage{21}
+  \item {E\+X\+\_\+\+T\+E\+M\+P\+F\+A\+IL}
+    \subitem {errvals.\+h}, \hyperpage{21}
+  \item {E\+X\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}
+    \subitem {errvals.\+h}, \hyperpage{21}
+  \item {E\+X\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+ED}
+    \subitem {errvals.\+h}, \hyperpage{21}
+  \item {E\+X\+\_\+\+U\+S\+A\+GE}
+    \subitem {errvals.\+h}, \hyperpage{22}
+  \item {error\+\_\+what}
+    \subitem {errvals.\+h}, \hyperpage{22}
+  \item {errvals.\+h}, \hyperpage{18}
+    \subitem {E\+X\+\_\+\+\_\+\+B\+A\+SE}, \hyperpage{19}
+    \subitem {E\+X\+\_\+\+\_\+\+M\+AX}, \hyperpage{19}
+    \subitem {E\+X\+\_\+\+A\+R\+G\+S\+L\+I\+M\+I\+TS}, \hyperpage{19}
+    \subitem {E\+X\+\_\+\+B\+A\+D\+A\+R\+GS}, \hyperpage{19}
+    \subitem {E\+X\+\_\+\+C\+A\+N\+T\+C\+R\+E\+AT}, \hyperpage{19}
+    \subitem {E\+X\+\_\+\+C\+O\+N\+F\+IG}, \hyperpage{19}
+    \subitem {E\+X\+\_\+\+D\+A\+T\+A\+E\+RR}, \hyperpage{19}
+    \subitem {E\+X\+\_\+\+D\+E\+N\+I\+ED}, \hyperpage{19}
+    \subitem {E\+X\+\_\+\+I\+O\+E\+RR}, \hyperpage{20}
+    \subitem {E\+X\+\_\+\+N\+O\+F\+I\+LE}, \hyperpage{20}
+    \subitem {E\+X\+\_\+\+N\+O\+H\+O\+ST}, \hyperpage{20}
+    \subitem {E\+X\+\_\+\+N\+O\+I\+N\+P\+UT}, \hyperpage{20}
+    \subitem {E\+X\+\_\+\+N\+O\+P\+E\+RM}, \hyperpage{20}
+    \subitem {E\+X\+\_\+\+N\+O\+U\+S\+ER}, \hyperpage{20}
+    \subitem {E\+X\+\_\+\+O\+S\+E\+RR}, \hyperpage{20}
+    \subitem {E\+X\+\_\+\+O\+S\+F\+I\+LE}, \hyperpage{21}
+    \subitem {E\+X\+\_\+\+OK}, \hyperpage{20}
+    \subitem {E\+X\+\_\+\+P\+R\+O\+T\+O\+C\+OL}, \hyperpage{21}
+    \subitem {E\+X\+\_\+\+S\+E\+G\+F\+A\+U\+LT}, \hyperpage{21}
+    \subitem {E\+X\+\_\+\+S\+O\+F\+T\+W\+A\+RE}, \hyperpage{21}
+    \subitem {E\+X\+\_\+\+S\+Y\+N\+E\+RR}, \hyperpage{21}
+    \subitem {E\+X\+\_\+\+T\+E\+M\+P\+F\+A\+IL}, \hyperpage{21}
+    \subitem {E\+X\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}, 
+		\hyperpage{21}
+    \subitem {E\+X\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+ED}, 
+		\hyperpage{21}
+    \subitem {E\+X\+\_\+\+U\+S\+A\+GE}, \hyperpage{22}
+    \subitem {error\+\_\+what}, \hyperpage{22}
+
+  \indexspace
+
+  \item {F\+M\+AX}
+    \subitem {asciitable.\+h}, \hyperpage{16}
+  \item {F\+S\+I\+ZE}
+    \subitem {asciitable.\+h}, \hyperpage{16}
+  \item {fbuffer}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{11}
+  \item {fcharcount}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{11}
+  \item {ff}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{11}
+  \item {field}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{11}
+  \item {FS}
+    \subitem {asciitable.\+h}, \hyperpage{16}
+
+  \indexspace
+
+  \item {ifname}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{11}
+  \item {ifp}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{11}
+
+  \indexspace
+
+  \item {L\+M\+A\+X\+S\+I\+ZE}
+    \subitem {asciitable.\+h}, \hyperpage{16}
+
+  \indexspace
+
+  \item {mptr}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{11}
+
+  \indexspace
+
+  \item {nchar}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{12}
+  \item {nline}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{12}
+
+  \indexspace
+
+  \item {O\+FS}
+    \subitem {asciitable.\+h}, \hyperpage{16}
+  \item {O\+RS}
+    \subitem {asciitable.\+h}, \hyperpage{16}
+  \item {ofname}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{12}
+
+  \indexspace
+
+  \item {parserow}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{9}
+  \item {ptr}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{12}
+
+  \indexspace
+
+  \item {R\+M\+AX}
+    \subitem {asciitable.\+h}, \hyperpage{17}
+  \item {read}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{9}
+  \item {ret}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{12}
+  \item {rowcount}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{12}
+  \item {rows}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{12}
+  \item {RS}
+    \subitem {asciitable.\+h}, \hyperpage{17}
+
+  \indexspace
+
+  \item {temp}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{13}
+  \item {totchars}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{13}
+  \item {totlines}
+    \subitem {A\+S\+C\+I\+I\+Table}, \hyperpage{13}
+
+\end{theindex}

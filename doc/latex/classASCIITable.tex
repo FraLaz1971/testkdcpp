@@ -1,0 +1,324 @@
+\hypertarget{classASCIITable}{}\section{A\+S\+C\+I\+I\+Table Class Reference}
+\label{classASCIITable}\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+
+
+implements basic input/output operations on ascii table dataset  
+
+
+
+
+{\ttfamily \#include $<$asciitable.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classASCIITable_af6407338748ab521c979053e9b559ea7}{A\+S\+C\+I\+I\+Table} (const char $\ast$infile, int nrows, int ncols)
+\begin{DoxyCompactList}\small\item\em constructor\+: takes in input the file name to ber read, the number of rows and the number of columns of the input table and soon read the file content into R\+AM memory to be processed \end{DoxyCompactList}\item 
+\hyperlink{classASCIITable_a75a7961697d0ed657c23b3c823c19e7f}{A\+S\+C\+I\+I\+Table} (void)
+\begin{DoxyCompactList}\small\item\em constructor\+: takes no arguments and do nothing \end{DoxyCompactList}\item 
+\hyperlink{classASCIITable_ae222c329fe48cc1d681761008f10729f}{A\+S\+C\+I\+I\+Table} (int nrows, int ncols)
+\begin{DoxyCompactList}\small\item\em constructor\+: \end{DoxyCompactList}\item 
+\hyperlink{classASCIITable_a68a34a07ecdc249d4a48c75797320f8f}{$\sim$\+A\+S\+C\+I\+I\+Table} (void)
+\item 
+int \hyperlink{classASCIITable_a5ec694dec500699648ef16693277bc22}{read} (const F\+I\+LE $\ast$inf)
+\item 
+int \hyperlink{classASCIITable_aec29916ecab019573c16364bf33d20e9}{dump} (void)
+\item 
+int \hyperlink{classASCIITable_a6d06a2ed737f3151484c47bff7fad033}{parserow} (char $\ast$mybuffer, int mncols)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classASCIITable_a638c2dc7e076f756226ae733beadc5e4}{data} \mbox{[}256\mbox{]}\mbox{[}256\mbox{]}
+\item 
+int \hyperlink{classASCIITable_ac05ef89d192bd866ba035674b721cb52}{rows}
+\item 
+int \hyperlink{classASCIITable_a43631791bb496f2a4d7434f7f58366e5}{cols}
+\item 
+char $\ast$ \hyperlink{classASCIITable_a4207703c6053463369e7b735d2acade4}{buffer}
+\item 
+char $\ast$ \hyperlink{classASCIITable_a4a4851a1a4e225724a0eb1cd6d1d143f}{ifname} =(char$\ast$)\char`\"{}table.\+asc\char`\"{}
+\begin{DoxyCompactList}\small\item\em name of the input file that can be read and saved into the \hyperlink{classASCIITable}{A\+S\+C\+I\+I\+Table} in R\+AM \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{classASCIITable_aefc70f3b1a4e713388c5d8232174ea19}{ofname} =(char$\ast$)\char`\"{}otable.\+asc\char`\"{}
+\begin{DoxyCompactList}\small\item\em name of the output file that can be written saving into the \hyperlink{classASCIITable}{A\+S\+C\+I\+I\+Table} in R\+AM \end{DoxyCompactList}\item 
+F\+I\+LE $\ast$ \hyperlink{classASCIITable_ae9f8a8aad63faf17676240fd8dee6ae6}{ifp}
+\begin{DoxyCompactList}\small\item\em input file object pointer \end{DoxyCompactList}\item 
+int \hyperlink{classASCIITable_aae50bf12dfec6330e08a2a77b8a11146}{ret}
+\item 
+int \hyperlink{classASCIITable_ac87f7ae9bbb1a3c73b7717c5b134bd0c}{nline} =0
+\item 
+int \hyperlink{classASCIITable_aed90c714b9dc45b356e26bf4d02af1a2}{colcount} =0
+\item 
+int \hyperlink{classASCIITable_adc342ae85d1b6ad8b5cdfbda85176a70}{rowcount} =0
+\item 
+int \hyperlink{classASCIITable_a5c16e8d47c74cafec9d906d63e471126}{nchar} =0
+\item 
+F\+I\+LE $\ast$ \hyperlink{classASCIITable_a672404b4ac0a24a0a3c81e50bfd1b2b8}{ptr}
+\item 
+F\+I\+LE $\ast$ \hyperlink{classASCIITable_a04d11d104ccb60f633263ca6d587a32e}{mptr}
+\item 
+int \hyperlink{classASCIITable_a4a1eb92503380ccbaa2721d10fee49b8}{c}
+\item 
+int \hyperlink{classASCIITable_a38da99707762305ba28422e5cfef6750}{cc}
+\item 
+int \hyperlink{classASCIITable_a130cbac5edad2ce441d7532c0d8b7ba9}{totlines}
+\item 
+int \hyperlink{classASCIITable_a8393e5afb07999bed80a0af466e0f019}{totchars}
+\item 
+char $\ast$ \hyperlink{classASCIITable_afcf7be4eb13da8b6fe21de74b30ecd4b}{field}
+\item 
+int \hyperlink{classASCIITable_a8ea5c55891e4e010dca14f6b76c7eb45}{fcharcount}
+\item 
+int \hyperlink{classASCIITable_ae08a482aec894d37c069a82c8cb626af}{ff} =0
+\item 
+char \hyperlink{classASCIITable_adfa0ae29066634586e41df5badb9bcbc}{temp} \mbox{[}\hyperlink{asciitable_8h_a7de6f71b3f223ff342d8517e2706252d}{F\+S\+I\+ZE}\mbox{]}
+\item 
+char $\ast$ \hyperlink{classASCIITable_a32643771c6f77397883fec75c748c062}{fbuffer}
+\item 
+size\+\_\+t \hyperlink{classASCIITable_a13248c4b9e80f4097227d339dfdaa9f6}{bufsize} = \hyperlink{asciitable_8h_ad3273464643b12407cb405d8c298f943}{L\+M\+A\+X\+S\+I\+ZE}
+\item 
+size\+\_\+t \hyperlink{classASCIITable_a644aab2a8b33c2a7babfd400a09e1e1a}{characters}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+implements basic input/output operations on ascii table dataset 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classASCIITable_af6407338748ab521c979053e9b559ea7}\label{classASCIITable_af6407338748ab521c979053e9b559ea7}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{A\+S\+C\+I\+I\+Table()}{ASCIITable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily A\+S\+C\+I\+I\+Table\+::\+A\+S\+C\+I\+I\+Table (\begin{DoxyParamCaption}\item[{const char $\ast$}]{infile,  }\item[{int}]{nrows,  }\item[{int}]{ncols }\end{DoxyParamCaption})}
+
+
+
+constructor\+: takes in input the file name to ber read, the number of rows and the number of columns of the input table and soon read the file content into R\+AM memory to be processed 
+
+\mbox{\Hypertarget{classASCIITable_a75a7961697d0ed657c23b3c823c19e7f}\label{classASCIITable_a75a7961697d0ed657c23b3c823c19e7f}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{A\+S\+C\+I\+I\+Table()}{ASCIITable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily A\+S\+C\+I\+I\+Table\+::\+A\+S\+C\+I\+I\+Table (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+constructor\+: takes no arguments and do nothing 
+
+\mbox{\Hypertarget{classASCIITable_ae222c329fe48cc1d681761008f10729f}\label{classASCIITable_ae222c329fe48cc1d681761008f10729f}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{A\+S\+C\+I\+I\+Table()}{ASCIITable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily A\+S\+C\+I\+I\+Table\+::\+A\+S\+C\+I\+I\+Table (\begin{DoxyParamCaption}\item[{int}]{nrows,  }\item[{int}]{ncols }\end{DoxyParamCaption})}
+
+
+
+constructor\+: 
+
+\mbox{\Hypertarget{classASCIITable_a68a34a07ecdc249d4a48c75797320f8f}\label{classASCIITable_a68a34a07ecdc249d4a48c75797320f8f}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!````~A\+S\+C\+I\+I\+Table@{$\sim$\+A\+S\+C\+I\+I\+Table}}
+\index{````~A\+S\+C\+I\+I\+Table@{$\sim$\+A\+S\+C\+I\+I\+Table}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{$\sim$\+A\+S\+C\+I\+I\+Table()}{~ASCIITable()}}
+{\footnotesize\ttfamily A\+S\+C\+I\+I\+Table\+::$\sim$\+A\+S\+C\+I\+I\+Table (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]write docs \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classASCIITable_aec29916ecab019573c16364bf33d20e9}\label{classASCIITable_aec29916ecab019573c16364bf33d20e9}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!dump@{dump}}
+\index{dump@{dump}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::dump (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]write docs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classASCIITable_a6d06a2ed737f3151484c47bff7fad033}\label{classASCIITable_a6d06a2ed737f3151484c47bff7fad033}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!parserow@{parserow}}
+\index{parserow@{parserow}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{parserow()}{parserow()}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::parserow (\begin{DoxyParamCaption}\item[{char $\ast$}]{mybuffer,  }\item[{int}]{mncols }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]write docs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classASCIITable_a5ec694dec500699648ef16693277bc22}\label{classASCIITable_a5ec694dec500699648ef16693277bc22}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!read@{read}}
+\index{read@{read}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::read (\begin{DoxyParamCaption}\item[{const F\+I\+LE $\ast$}]{inf }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]write docs \end{DoxyRefDesc}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classASCIITable_a4207703c6053463369e7b735d2acade4}\label{classASCIITable_a4207703c6053463369e7b735d2acade4}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!buffer@{buffer}}
+\index{buffer@{buffer}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily char$\ast$ A\+S\+C\+I\+I\+Table\+::buffer}
+
+\mbox{\Hypertarget{classASCIITable_a13248c4b9e80f4097227d339dfdaa9f6}\label{classASCIITable_a13248c4b9e80f4097227d339dfdaa9f6}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!bufsize@{bufsize}}
+\index{bufsize@{bufsize}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{bufsize}{bufsize}}
+{\footnotesize\ttfamily size\+\_\+t A\+S\+C\+I\+I\+Table\+::bufsize = \hyperlink{asciitable_8h_ad3273464643b12407cb405d8c298f943}{L\+M\+A\+X\+S\+I\+ZE}}
+
+\mbox{\Hypertarget{classASCIITable_a4a1eb92503380ccbaa2721d10fee49b8}\label{classASCIITable_a4a1eb92503380ccbaa2721d10fee49b8}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!c@{c}}
+\index{c@{c}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::c}
+
+\mbox{\Hypertarget{classASCIITable_a38da99707762305ba28422e5cfef6750}\label{classASCIITable_a38da99707762305ba28422e5cfef6750}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!cc@{cc}}
+\index{cc@{cc}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{cc}{cc}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::cc}
+
+\mbox{\Hypertarget{classASCIITable_a644aab2a8b33c2a7babfd400a09e1e1a}\label{classASCIITable_a644aab2a8b33c2a7babfd400a09e1e1a}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!characters@{characters}}
+\index{characters@{characters}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{characters}{characters}}
+{\footnotesize\ttfamily size\+\_\+t A\+S\+C\+I\+I\+Table\+::characters}
+
+\mbox{\Hypertarget{classASCIITable_aed90c714b9dc45b356e26bf4d02af1a2}\label{classASCIITable_aed90c714b9dc45b356e26bf4d02af1a2}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!colcount@{colcount}}
+\index{colcount@{colcount}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{colcount}{colcount}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::colcount =0}
+
+\mbox{\Hypertarget{classASCIITable_a43631791bb496f2a4d7434f7f58366e5}\label{classASCIITable_a43631791bb496f2a4d7434f7f58366e5}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!cols@{cols}}
+\index{cols@{cols}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{cols}{cols}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::cols}
+
+\mbox{\Hypertarget{classASCIITable_a638c2dc7e076f756226ae733beadc5e4}\label{classASCIITable_a638c2dc7e076f756226ae733beadc5e4}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!data@{data}}
+\index{data@{data}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily float A\+S\+C\+I\+I\+Table\+::data\mbox{[}256\mbox{]}\mbox{[}256\mbox{]}}
+
+\mbox{\Hypertarget{classASCIITable_a32643771c6f77397883fec75c748c062}\label{classASCIITable_a32643771c6f77397883fec75c748c062}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!fbuffer@{fbuffer}}
+\index{fbuffer@{fbuffer}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{fbuffer}{fbuffer}}
+{\footnotesize\ttfamily char$\ast$ A\+S\+C\+I\+I\+Table\+::fbuffer}
+
+\mbox{\Hypertarget{classASCIITable_a8ea5c55891e4e010dca14f6b76c7eb45}\label{classASCIITable_a8ea5c55891e4e010dca14f6b76c7eb45}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!fcharcount@{fcharcount}}
+\index{fcharcount@{fcharcount}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{fcharcount}{fcharcount}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::fcharcount}
+
+\mbox{\Hypertarget{classASCIITable_ae08a482aec894d37c069a82c8cb626af}\label{classASCIITable_ae08a482aec894d37c069a82c8cb626af}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!ff@{ff}}
+\index{ff@{ff}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{ff}{ff}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::ff =0}
+
+\mbox{\Hypertarget{classASCIITable_afcf7be4eb13da8b6fe21de74b30ecd4b}\label{classASCIITable_afcf7be4eb13da8b6fe21de74b30ecd4b}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!field@{field}}
+\index{field@{field}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{field}{field}}
+{\footnotesize\ttfamily char$\ast$ A\+S\+C\+I\+I\+Table\+::field}
+
+\mbox{\Hypertarget{classASCIITable_a4a4851a1a4e225724a0eb1cd6d1d143f}\label{classASCIITable_a4a4851a1a4e225724a0eb1cd6d1d143f}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!ifname@{ifname}}
+\index{ifname@{ifname}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{ifname}{ifname}}
+{\footnotesize\ttfamily char$\ast$ A\+S\+C\+I\+I\+Table\+::ifname =(char$\ast$)\char`\"{}table.\+asc\char`\"{}}
+
+
+
+name of the input file that can be read and saved into the \hyperlink{classASCIITable}{A\+S\+C\+I\+I\+Table} in R\+AM 
+
+\mbox{\Hypertarget{classASCIITable_ae9f8a8aad63faf17676240fd8dee6ae6}\label{classASCIITable_ae9f8a8aad63faf17676240fd8dee6ae6}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!ifp@{ifp}}
+\index{ifp@{ifp}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{ifp}{ifp}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ A\+S\+C\+I\+I\+Table\+::ifp}
+
+
+
+input file object pointer 
+
+\mbox{\Hypertarget{classASCIITable_a04d11d104ccb60f633263ca6d587a32e}\label{classASCIITable_a04d11d104ccb60f633263ca6d587a32e}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!mptr@{mptr}}
+\index{mptr@{mptr}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{mptr}{mptr}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ A\+S\+C\+I\+I\+Table\+::mptr}
+
+\mbox{\Hypertarget{classASCIITable_a5c16e8d47c74cafec9d906d63e471126}\label{classASCIITable_a5c16e8d47c74cafec9d906d63e471126}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!nchar@{nchar}}
+\index{nchar@{nchar}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{nchar}{nchar}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::nchar =0}
+
+\mbox{\Hypertarget{classASCIITable_ac87f7ae9bbb1a3c73b7717c5b134bd0c}\label{classASCIITable_ac87f7ae9bbb1a3c73b7717c5b134bd0c}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!nline@{nline}}
+\index{nline@{nline}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{nline}{nline}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::nline =0}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]check colcount / nline redundancy \end{DoxyRefDesc}
+\mbox{\Hypertarget{classASCIITable_aefc70f3b1a4e713388c5d8232174ea19}\label{classASCIITable_aefc70f3b1a4e713388c5d8232174ea19}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!ofname@{ofname}}
+\index{ofname@{ofname}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{ofname}{ofname}}
+{\footnotesize\ttfamily char$\ast$ A\+S\+C\+I\+I\+Table\+::ofname =(char$\ast$)\char`\"{}otable.\+asc\char`\"{}}
+
+
+
+name of the output file that can be written saving into the \hyperlink{classASCIITable}{A\+S\+C\+I\+I\+Table} in R\+AM 
+
+\mbox{\Hypertarget{classASCIITable_a672404b4ac0a24a0a3c81e50bfd1b2b8}\label{classASCIITable_a672404b4ac0a24a0a3c81e50bfd1b2b8}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!ptr@{ptr}}
+\index{ptr@{ptr}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ A\+S\+C\+I\+I\+Table\+::ptr}
+
+\mbox{\Hypertarget{classASCIITable_aae50bf12dfec6330e08a2a77b8a11146}\label{classASCIITable_aae50bf12dfec6330e08a2a77b8a11146}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!ret@{ret}}
+\index{ret@{ret}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{ret}{ret}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::ret}
+
+\mbox{\Hypertarget{classASCIITable_adc342ae85d1b6ad8b5cdfbda85176a70}\label{classASCIITable_adc342ae85d1b6ad8b5cdfbda85176a70}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!rowcount@{rowcount}}
+\index{rowcount@{rowcount}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{rowcount}{rowcount}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::rowcount =0}
+
+\mbox{\Hypertarget{classASCIITable_ac05ef89d192bd866ba035674b721cb52}\label{classASCIITable_ac05ef89d192bd866ba035674b721cb52}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!rows@{rows}}
+\index{rows@{rows}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::rows}
+
+\mbox{\Hypertarget{classASCIITable_adfa0ae29066634586e41df5badb9bcbc}\label{classASCIITable_adfa0ae29066634586e41df5badb9bcbc}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!temp@{temp}}
+\index{temp@{temp}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{temp}{temp}}
+{\footnotesize\ttfamily char A\+S\+C\+I\+I\+Table\+::temp\mbox{[}\hyperlink{asciitable_8h_a7de6f71b3f223ff342d8517e2706252d}{F\+S\+I\+ZE}\mbox{]}}
+
+\mbox{\Hypertarget{classASCIITable_a8393e5afb07999bed80a0af466e0f019}\label{classASCIITable_a8393e5afb07999bed80a0af466e0f019}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!totchars@{totchars}}
+\index{totchars@{totchars}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{totchars}{totchars}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::totchars}
+
+\mbox{\Hypertarget{classASCIITable_a130cbac5edad2ce441d7532c0d8b7ba9}\label{classASCIITable_a130cbac5edad2ce441d7532c0d8b7ba9}} 
+\index{A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}!totlines@{totlines}}
+\index{totlines@{totlines}!A\+S\+C\+I\+I\+Table@{A\+S\+C\+I\+I\+Table}}
+\subsubsection{\texorpdfstring{totlines}{totlines}}
+{\footnotesize\ttfamily int A\+S\+C\+I\+I\+Table\+::totlines}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{asciitable_8h}{asciitable.\+h}\end{DoxyCompactItemize}

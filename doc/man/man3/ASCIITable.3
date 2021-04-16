@@ -1,0 +1,245 @@
+.TH "ASCIITable" 3 "Fri Apr 16 2021" "Version 0.0.1" "ASCII Table" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ASCIITable \- implements basic input/output operations on ascii table dataset  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <asciitable\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBASCIITable\fP (const char *infile, int nrows, int ncols)"
+.br
+.RI "constructor: takes in input the file name to ber read, the number of rows and the number of columns of the input table and soon read the file content into RAM memory to be processed "
+.ti -1c
+.RI "\fBASCIITable\fP (void)"
+.br
+.RI "constructor: takes no arguments and do nothing "
+.ti -1c
+.RI "\fBASCIITable\fP (int nrows, int ncols)"
+.br
+.RI "constructor: "
+.ti -1c
+.RI "\fB~ASCIITable\fP (void)"
+.br
+.ti -1c
+.RI "int \fBread\fP (const FILE *inf)"
+.br
+.ti -1c
+.RI "int \fBdump\fP (void)"
+.br
+.ti -1c
+.RI "int \fBparserow\fP (char *mybuffer, int mncols)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "float \fBdata\fP [256][256]"
+.br
+.ti -1c
+.RI "int \fBrows\fP"
+.br
+.ti -1c
+.RI "int \fBcols\fP"
+.br
+.ti -1c
+.RI "char * \fBbuffer\fP"
+.br
+.ti -1c
+.RI "char * \fBifname\fP =(char*)'table\&.asc'"
+.br
+.RI "name of the input file that can be read and saved into the \fBASCIITable\fP in RAM "
+.ti -1c
+.RI "char * \fBofname\fP =(char*)'otable\&.asc'"
+.br
+.RI "name of the output file that can be written saving into the \fBASCIITable\fP in RAM "
+.ti -1c
+.RI "FILE * \fBifp\fP"
+.br
+.RI "input file object pointer "
+.ti -1c
+.RI "int \fBret\fP"
+.br
+.ti -1c
+.RI "int \fBnline\fP =0"
+.br
+.ti -1c
+.RI "int \fBcolcount\fP =0"
+.br
+.ti -1c
+.RI "int \fBrowcount\fP =0"
+.br
+.ti -1c
+.RI "int \fBnchar\fP =0"
+.br
+.ti -1c
+.RI "FILE * \fBptr\fP"
+.br
+.ti -1c
+.RI "FILE * \fBmptr\fP"
+.br
+.ti -1c
+.RI "int \fBc\fP"
+.br
+.ti -1c
+.RI "int \fBcc\fP"
+.br
+.ti -1c
+.RI "int \fBtotlines\fP"
+.br
+.ti -1c
+.RI "int \fBtotchars\fP"
+.br
+.ti -1c
+.RI "char * \fBfield\fP"
+.br
+.ti -1c
+.RI "int \fBfcharcount\fP"
+.br
+.ti -1c
+.RI "int \fBff\fP =0"
+.br
+.ti -1c
+.RI "char \fBtemp\fP [\fBFSIZE\fP]"
+.br
+.ti -1c
+.RI "char * \fBfbuffer\fP"
+.br
+.ti -1c
+.RI "size_t \fBbufsize\fP = \fBLMAXSIZE\fP"
+.br
+.ti -1c
+.RI "size_t \fBcharacters\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+implements basic input/output operations on ascii table dataset 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ASCIITable::ASCIITable (const char * infile, int nrows, int ncols)"
+
+.PP
+constructor: takes in input the file name to ber read, the number of rows and the number of columns of the input table and soon read the file content into RAM memory to be processed 
+.SS "ASCIITable::ASCIITable (void)"
+
+.PP
+constructor: takes no arguments and do nothing 
+.SS "ASCIITable::ASCIITable (int nrows, int ncols)"
+
+.PP
+constructor: 
+.SS "ASCIITable::~ASCIITable (void)"
+
+.PP
+\fBTodo\fP
+.RS 4
+write docs 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int ASCIITable::dump (void)"
+
+.PP
+\fBTodo\fP
+.RS 4
+write docs 
+.RE
+.PP
+
+.SS "int ASCIITable::parserow (char * mybuffer, int mncols)"
+
+.PP
+\fBTodo\fP
+.RS 4
+write docs 
+.RE
+.PP
+
+.SS "int ASCIITable::read (const FILE * inf)"
+
+.PP
+\fBTodo\fP
+.RS 4
+write docs 
+.RE
+.PP
+
+.SH "Field Documentation"
+.PP 
+.SS "char* ASCIITable::buffer"
+
+.SS "size_t ASCIITable::bufsize = \fBLMAXSIZE\fP"
+
+.SS "int ASCIITable::c"
+
+.SS "int ASCIITable::cc"
+
+.SS "size_t ASCIITable::characters"
+
+.SS "int ASCIITable::colcount =0"
+
+.SS "int ASCIITable::cols"
+
+.SS "float ASCIITable::data[256][256]"
+
+.SS "char* ASCIITable::fbuffer"
+
+.SS "int ASCIITable::fcharcount"
+
+.SS "int ASCIITable::ff =0"
+
+.SS "char* ASCIITable::field"
+
+.SS "char* ASCIITable::ifname =(char*)'table\&.asc'"
+
+.PP
+name of the input file that can be read and saved into the \fBASCIITable\fP in RAM 
+.SS "FILE* ASCIITable::ifp"
+
+.PP
+input file object pointer 
+.SS "FILE* ASCIITable::mptr"
+
+.SS "int ASCIITable::nchar =0"
+
+.SS "int ASCIITable::nline =0"
+
+.PP
+\fBTodo\fP
+.RS 4
+check colcount / nline redundancy 
+.RE
+.PP
+
+.SS "char* ASCIITable::ofname =(char*)'otable\&.asc'"
+
+.PP
+name of the output file that can be written saving into the \fBASCIITable\fP in RAM 
+.SS "FILE* ASCIITable::ptr"
+
+.SS "int ASCIITable::ret"
+
+.SS "int ASCIITable::rowcount =0"
+
+.SS "int ASCIITable::rows"
+
+.SS "char ASCIITable::temp[\fBFSIZE\fP]"
+
+.SS "int ASCIITable::totchars"
+
+.SS "int ASCIITable::totlines"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ASCII Table from the source code\&.

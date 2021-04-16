@@ -1,0 +1,156 @@
+.TH "errvals.h" 3 "Fri Apr 16 2021" "Version 0.0.1" "ASCII Table" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+errvals.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBEX_OK\fP   0	/** successful termination */"
+.br
+.ti -1c
+.RI "#define \fBEX_SYNERR\fP   2	/** syntax error */"
+.br
+.ti -1c
+.RI "#define \fBEX__BASE\fP   64	/** base value for error messages */"
+.br
+.ti -1c
+.RI "#define \fBEX_USAGE\fP   64	/** command line usage error */"
+.br
+.ti -1c
+.RI "#define \fBEX_DATAERR\fP   65	/** data format error */"
+.br
+.ti -1c
+.RI "#define \fBEX_NOINPUT\fP   66	/** cannot open input */"
+.br
+.ti -1c
+.RI "#define \fBEX_NOUSER\fP   67	/** addressee unknown */"
+.br
+.ti -1c
+.RI "#define \fBEX_NOHOST\fP   68	/** host name unknown */"
+.br
+.ti -1c
+.RI "#define \fBEX_UNAVAILABLE\fP   69	/** service unavailable */"
+.br
+.ti -1c
+.RI "#define \fBEX_SOFTWARE\fP   70	/** internal software error */"
+.br
+.ti -1c
+.RI "#define \fBEX_OSERR\fP   71	/** system error (e\&.g\&., can't fork) */"
+.br
+.ti -1c
+.RI "#define \fBEX_OSFILE\fP   72	/** critical OS file missing */"
+.br
+.ti -1c
+.RI "#define \fBEX_CANTCREAT\fP   73	/** can't create (user) output file */"
+.br
+.ti -1c
+.RI "#define \fBEX_IOERR\fP   74	/** input/output error */"
+.br
+.ti -1c
+.RI "#define \fBEX_TEMPFAIL\fP   75	/** temp failure; user is invited to retry */"
+.br
+.ti -1c
+.RI "#define \fBEX_PROTOCOL\fP   76	/** remote error in protocol */"
+.br
+.ti -1c
+.RI "#define \fBEX_NOPERM\fP   77	/** permission denied */"
+.br
+.ti -1c
+.RI "#define \fBEX_CONFIG\fP   78	/** configuration error */"
+.br
+.ti -1c
+.RI "#define \fBEX__MAX\fP   79	/** maximum listed value */"
+.br
+.ti -1c
+.RI "#define \fBEX_BADARGS\fP   85         /** Wrong number of arguments */"
+.br
+.ti -1c
+.RI "#define \fBEX_ARGSLIMITS\fP   86      /** an argument is out of allowed limits */"
+.br
+.ti -1c
+.RI "#define \fBEX_UNSUPPORTED\fP   87     /** unsupported system */"
+.br
+.ti -1c
+.RI "#define \fBEX_DENIED\fP   126      /** permission denied */"
+.br
+.ti -1c
+.RI "#define \fBEX_NOFILE\fP   127     /** file not present */"
+.br
+.ti -1c
+.RI "#define \fBEX_SEGFAULT\fP   139     /** access to not allowed memory */"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBerror_what\fP (int eid)"
+.br
+.RI "gives the error message in function of the error code "
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define EX__BASE   64	/** base value for error messages */"
+
+.SS "#define EX__MAX   79	/** maximum listed value */"
+
+.SS "#define EX_ARGSLIMITS   86      /** an argument is out of allowed limits */"
+
+.SS "#define EX_BADARGS   85         /** Wrong number of arguments */"
+mendel cooper abs guide example exit codes 
+.SS "#define EX_CANTCREAT   73	/** can't create (user) output file */"
+
+.SS "#define EX_CONFIG   78	/** configuration error */"
+
+.SS "#define EX_DATAERR   65	/** data format error */"
+
+.SS "#define EX_DENIED   126      /** permission denied */"
+system exit values 
+.SS "#define EX_IOERR   74	/** input/output error */"
+
+.SS "#define EX_NOFILE   127     /** file not present */"
+
+.SS "#define EX_NOHOST   68	/** host name unknown */"
+
+.SS "#define EX_NOINPUT   66	/** cannot open input */"
+
+.SS "#define EX_NOPERM   77	/** permission denied */"
+
+.SS "#define EX_NOUSER   67	/** addressee unknown */"
+
+.SS "#define EX_OK   0	/** successful termination */"
+
+.SS "#define EX_OSERR   71	/** system error (e\&.g\&., can't fork) */"
+
+.SS "#define EX_OSFILE   72	/** critical OS file missing */"
+
+.SS "#define EX_PROTOCOL   76	/** remote error in protocol */"
+
+.SS "#define EX_SEGFAULT   139     /** access to not allowed memory */"
+
+.SS "#define EX_SOFTWARE   70	/** internal software error */"
+
+.SS "#define EX_SYNERR   2	/** syntax error */"
+
+.SS "#define EX_TEMPFAIL   75	/** temp failure; user is invited to retry */"
+
+.SS "#define EX_UNAVAILABLE   69	/** service unavailable */"
+
+.SS "#define EX_UNSUPPORTED   87     /** unsupported system */"
+
+.SS "#define EX_USAGE   64	/** command line usage error */"
+
+.SH "Function Documentation"
+.PP 
+.SS "void error_what (int eid)"
+
+.PP
+gives the error message in function of the error code 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ASCII Table from the source code\&.

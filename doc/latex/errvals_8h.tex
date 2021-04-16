@@ -1,0 +1,233 @@
+\hypertarget{errvals_8h}{}\section{errvals.\+h File Reference}
+\label{errvals_8h}\index{errvals.\+h@{errvals.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{errvals_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{errvals_8h_aed4bd849f99a5328fe36d1963de00591}{E\+X\+\_\+\+OK}~0	/$\ast$$\ast$ successful termination $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a5801735e57b4c6554d4124742da8e8df}{E\+X\+\_\+\+S\+Y\+N\+E\+RR}~2	/$\ast$$\ast$ syntax error $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_aaed0821130d25b0086d3b0c0ca150278}{E\+X\+\_\+\+\_\+\+B\+A\+SE}~64	/$\ast$$\ast$ base value for error messages $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_abbdf9290893d2876419c13b7b28f5d4e}{E\+X\+\_\+\+U\+S\+A\+GE}~64	/$\ast$$\ast$ command line usage error $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a483a5c14de098f6fc02950fbeb3cab5e}{E\+X\+\_\+\+D\+A\+T\+A\+E\+RR}~65	/$\ast$$\ast$ data format error $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_aee8a9f0cf8b09e7734b9c5c4f75218cf}{E\+X\+\_\+\+N\+O\+I\+N\+P\+UT}~66	/$\ast$$\ast$ cannot open input $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a9b187a247bf7757c06cd1c629bfe0a8a}{E\+X\+\_\+\+N\+O\+U\+S\+ER}~67	/$\ast$$\ast$ addressee unknown $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a8e7a847198a05d6192733d2636b07005}{E\+X\+\_\+\+N\+O\+H\+O\+ST}~68	/$\ast$$\ast$ host name unknown $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a64700ca081061c72709f72adb438be49}{E\+X\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}~69	/$\ast$$\ast$ service unavailable $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a587ae77ee5b3c931c10cb51c19053f11}{E\+X\+\_\+\+S\+O\+F\+T\+W\+A\+RE}~70	/$\ast$$\ast$ internal software error $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_aa88a6d093c89b8d7e868fc6baa0a214a}{E\+X\+\_\+\+O\+S\+E\+RR}~71	/$\ast$$\ast$ system error (e.\+g., can\textquotesingle{}t fork) $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a8420ff74ab88b08df924ccab61ec2e6e}{E\+X\+\_\+\+O\+S\+F\+I\+LE}~72	/$\ast$$\ast$ critical OS file missing $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_ac030cfddafe98bacd8db830a75f81f03}{E\+X\+\_\+\+C\+A\+N\+T\+C\+R\+E\+AT}~73	/$\ast$$\ast$ can\textquotesingle{}t create (user) output file $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a51dc7f5948835cdf92471f9478fab3ff}{E\+X\+\_\+\+I\+O\+E\+RR}~74	/$\ast$$\ast$ input/output error $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a0143ccd308d239d00953b99b265e8deb}{E\+X\+\_\+\+T\+E\+M\+P\+F\+A\+IL}~75	/$\ast$$\ast$ temp failure; user is invited to retry $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_ab781475747a100ce2cbaaa57c9c45fe9}{E\+X\+\_\+\+P\+R\+O\+T\+O\+C\+OL}~76	/$\ast$$\ast$ remote error in protocol $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_af091b7431988e6ca8e3a2949ec82f7b0}{E\+X\+\_\+\+N\+O\+P\+E\+RM}~77	/$\ast$$\ast$ permission denied $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a060f7b1fcb099e3bbebf729050ba9414}{E\+X\+\_\+\+C\+O\+N\+F\+IG}~78	/$\ast$$\ast$ configuration error $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a7628ad7a1ca09fe4137a2f8ebff01558}{E\+X\+\_\+\+\_\+\+M\+AX}~79	/$\ast$$\ast$ maximum listed value $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_af46e83836e145e4123b00697b9828e02}{E\+X\+\_\+\+B\+A\+D\+A\+R\+GS}~85         /$\ast$$\ast$ Wrong number of arguments $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a90d8ad14c2192d5d6af88ba2830187be}{E\+X\+\_\+\+A\+R\+G\+S\+L\+I\+M\+I\+TS}~86      /$\ast$$\ast$ an argument is out of allowed limits $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_aa7a7fea7c9887f575533977feccd94c6}{E\+X\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+ED}~87     /$\ast$$\ast$ unsupported system $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a650d1e9c575b5f3b210ce4b3abe4e54a}{E\+X\+\_\+\+D\+E\+N\+I\+ED}~126      /$\ast$$\ast$ permission denied $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_a8918dc5d9bb418fe96c77851b86887d1}{E\+X\+\_\+\+N\+O\+F\+I\+LE}~127     /$\ast$$\ast$ file not present $\ast$/
+\item 
+\#define \hyperlink{errvals_8h_accb9d6ca49394b476a27d17451c78b62}{E\+X\+\_\+\+S\+E\+G\+F\+A\+U\+LT}~139     /$\ast$$\ast$ access to not allowed memory $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{errvals_8h_a0723fcf97b6950d25e2c653313093442}{error\+\_\+what} (int eid)
+\begin{DoxyCompactList}\small\item\em gives the error message in function of the error code \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{errvals_8h_aaed0821130d25b0086d3b0c0ca150278}\label{errvals_8h_aaed0821130d25b0086d3b0c0ca150278}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+\_\+\+B\+A\+SE@{E\+X\+\_\+\+\_\+\+B\+A\+SE}}
+\index{E\+X\+\_\+\+\_\+\+B\+A\+SE@{E\+X\+\_\+\+\_\+\+B\+A\+SE}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+\_\+\+B\+A\+SE}{EX\_\_BASE}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+\_\+\+B\+A\+SE~64	/$\ast$$\ast$ base value for error messages $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a7628ad7a1ca09fe4137a2f8ebff01558}\label{errvals_8h_a7628ad7a1ca09fe4137a2f8ebff01558}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+\_\+\+M\+AX@{E\+X\+\_\+\+\_\+\+M\+AX}}
+\index{E\+X\+\_\+\+\_\+\+M\+AX@{E\+X\+\_\+\+\_\+\+M\+AX}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+\_\+\+M\+AX}{EX\_\_MAX}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+\_\+\+M\+AX~79	/$\ast$$\ast$ maximum listed value $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a90d8ad14c2192d5d6af88ba2830187be}\label{errvals_8h_a90d8ad14c2192d5d6af88ba2830187be}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+A\+R\+G\+S\+L\+I\+M\+I\+TS@{E\+X\+\_\+\+A\+R\+G\+S\+L\+I\+M\+I\+TS}}
+\index{E\+X\+\_\+\+A\+R\+G\+S\+L\+I\+M\+I\+TS@{E\+X\+\_\+\+A\+R\+G\+S\+L\+I\+M\+I\+TS}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+A\+R\+G\+S\+L\+I\+M\+I\+TS}{EX\_ARGSLIMITS}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+A\+R\+G\+S\+L\+I\+M\+I\+TS~86      /$\ast$$\ast$ an argument is out of allowed limits $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_af46e83836e145e4123b00697b9828e02}\label{errvals_8h_af46e83836e145e4123b00697b9828e02}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+B\+A\+D\+A\+R\+GS@{E\+X\+\_\+\+B\+A\+D\+A\+R\+GS}}
+\index{E\+X\+\_\+\+B\+A\+D\+A\+R\+GS@{E\+X\+\_\+\+B\+A\+D\+A\+R\+GS}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+B\+A\+D\+A\+R\+GS}{EX\_BADARGS}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+B\+A\+D\+A\+R\+GS~85         /$\ast$$\ast$ Wrong number of arguments $\ast$/}
+
+mendel cooper abs guide example exit codes \mbox{\Hypertarget{errvals_8h_ac030cfddafe98bacd8db830a75f81f03}\label{errvals_8h_ac030cfddafe98bacd8db830a75f81f03}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+C\+A\+N\+T\+C\+R\+E\+AT@{E\+X\+\_\+\+C\+A\+N\+T\+C\+R\+E\+AT}}
+\index{E\+X\+\_\+\+C\+A\+N\+T\+C\+R\+E\+AT@{E\+X\+\_\+\+C\+A\+N\+T\+C\+R\+E\+AT}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+C\+A\+N\+T\+C\+R\+E\+AT}{EX\_CANTCREAT}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+C\+A\+N\+T\+C\+R\+E\+AT~73	/$\ast$$\ast$ can\textquotesingle{}t create (user) output file $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a060f7b1fcb099e3bbebf729050ba9414}\label{errvals_8h_a060f7b1fcb099e3bbebf729050ba9414}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+C\+O\+N\+F\+IG@{E\+X\+\_\+\+C\+O\+N\+F\+IG}}
+\index{E\+X\+\_\+\+C\+O\+N\+F\+IG@{E\+X\+\_\+\+C\+O\+N\+F\+IG}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+C\+O\+N\+F\+IG}{EX\_CONFIG}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+C\+O\+N\+F\+IG~78	/$\ast$$\ast$ configuration error $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a483a5c14de098f6fc02950fbeb3cab5e}\label{errvals_8h_a483a5c14de098f6fc02950fbeb3cab5e}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+D\+A\+T\+A\+E\+RR@{E\+X\+\_\+\+D\+A\+T\+A\+E\+RR}}
+\index{E\+X\+\_\+\+D\+A\+T\+A\+E\+RR@{E\+X\+\_\+\+D\+A\+T\+A\+E\+RR}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+D\+A\+T\+A\+E\+RR}{EX\_DATAERR}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+D\+A\+T\+A\+E\+RR~65	/$\ast$$\ast$ data format error $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a650d1e9c575b5f3b210ce4b3abe4e54a}\label{errvals_8h_a650d1e9c575b5f3b210ce4b3abe4e54a}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+D\+E\+N\+I\+ED@{E\+X\+\_\+\+D\+E\+N\+I\+ED}}
+\index{E\+X\+\_\+\+D\+E\+N\+I\+ED@{E\+X\+\_\+\+D\+E\+N\+I\+ED}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+D\+E\+N\+I\+ED}{EX\_DENIED}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+D\+E\+N\+I\+ED~126      /$\ast$$\ast$ permission denied $\ast$/}
+
+system exit values \mbox{\Hypertarget{errvals_8h_a51dc7f5948835cdf92471f9478fab3ff}\label{errvals_8h_a51dc7f5948835cdf92471f9478fab3ff}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+I\+O\+E\+RR@{E\+X\+\_\+\+I\+O\+E\+RR}}
+\index{E\+X\+\_\+\+I\+O\+E\+RR@{E\+X\+\_\+\+I\+O\+E\+RR}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+I\+O\+E\+RR}{EX\_IOERR}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+I\+O\+E\+RR~74	/$\ast$$\ast$ input/output error $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a8918dc5d9bb418fe96c77851b86887d1}\label{errvals_8h_a8918dc5d9bb418fe96c77851b86887d1}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+N\+O\+F\+I\+LE@{E\+X\+\_\+\+N\+O\+F\+I\+LE}}
+\index{E\+X\+\_\+\+N\+O\+F\+I\+LE@{E\+X\+\_\+\+N\+O\+F\+I\+LE}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+N\+O\+F\+I\+LE}{EX\_NOFILE}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+N\+O\+F\+I\+LE~127     /$\ast$$\ast$ file not present $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a8e7a847198a05d6192733d2636b07005}\label{errvals_8h_a8e7a847198a05d6192733d2636b07005}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+N\+O\+H\+O\+ST@{E\+X\+\_\+\+N\+O\+H\+O\+ST}}
+\index{E\+X\+\_\+\+N\+O\+H\+O\+ST@{E\+X\+\_\+\+N\+O\+H\+O\+ST}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+N\+O\+H\+O\+ST}{EX\_NOHOST}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+N\+O\+H\+O\+ST~68	/$\ast$$\ast$ host name unknown $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_aee8a9f0cf8b09e7734b9c5c4f75218cf}\label{errvals_8h_aee8a9f0cf8b09e7734b9c5c4f75218cf}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+N\+O\+I\+N\+P\+UT@{E\+X\+\_\+\+N\+O\+I\+N\+P\+UT}}
+\index{E\+X\+\_\+\+N\+O\+I\+N\+P\+UT@{E\+X\+\_\+\+N\+O\+I\+N\+P\+UT}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+N\+O\+I\+N\+P\+UT}{EX\_NOINPUT}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+N\+O\+I\+N\+P\+UT~66	/$\ast$$\ast$ cannot open input $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_af091b7431988e6ca8e3a2949ec82f7b0}\label{errvals_8h_af091b7431988e6ca8e3a2949ec82f7b0}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+N\+O\+P\+E\+RM@{E\+X\+\_\+\+N\+O\+P\+E\+RM}}
+\index{E\+X\+\_\+\+N\+O\+P\+E\+RM@{E\+X\+\_\+\+N\+O\+P\+E\+RM}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+N\+O\+P\+E\+RM}{EX\_NOPERM}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+N\+O\+P\+E\+RM~77	/$\ast$$\ast$ permission denied $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a9b187a247bf7757c06cd1c629bfe0a8a}\label{errvals_8h_a9b187a247bf7757c06cd1c629bfe0a8a}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+N\+O\+U\+S\+ER@{E\+X\+\_\+\+N\+O\+U\+S\+ER}}
+\index{E\+X\+\_\+\+N\+O\+U\+S\+ER@{E\+X\+\_\+\+N\+O\+U\+S\+ER}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+N\+O\+U\+S\+ER}{EX\_NOUSER}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+N\+O\+U\+S\+ER~67	/$\ast$$\ast$ addressee unknown $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_aed4bd849f99a5328fe36d1963de00591}\label{errvals_8h_aed4bd849f99a5328fe36d1963de00591}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+OK@{E\+X\+\_\+\+OK}}
+\index{E\+X\+\_\+\+OK@{E\+X\+\_\+\+OK}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+OK}{EX\_OK}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+OK~0	/$\ast$$\ast$ successful termination $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_aa88a6d093c89b8d7e868fc6baa0a214a}\label{errvals_8h_aa88a6d093c89b8d7e868fc6baa0a214a}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+O\+S\+E\+RR@{E\+X\+\_\+\+O\+S\+E\+RR}}
+\index{E\+X\+\_\+\+O\+S\+E\+RR@{E\+X\+\_\+\+O\+S\+E\+RR}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+O\+S\+E\+RR}{EX\_OSERR}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+O\+S\+E\+RR~71	/$\ast$$\ast$ system error (e.\+g., can\textquotesingle{}t fork) $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a8420ff74ab88b08df924ccab61ec2e6e}\label{errvals_8h_a8420ff74ab88b08df924ccab61ec2e6e}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+O\+S\+F\+I\+LE@{E\+X\+\_\+\+O\+S\+F\+I\+LE}}
+\index{E\+X\+\_\+\+O\+S\+F\+I\+LE@{E\+X\+\_\+\+O\+S\+F\+I\+LE}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+O\+S\+F\+I\+LE}{EX\_OSFILE}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+O\+S\+F\+I\+LE~72	/$\ast$$\ast$ critical OS file missing $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_ab781475747a100ce2cbaaa57c9c45fe9}\label{errvals_8h_ab781475747a100ce2cbaaa57c9c45fe9}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+P\+R\+O\+T\+O\+C\+OL@{E\+X\+\_\+\+P\+R\+O\+T\+O\+C\+OL}}
+\index{E\+X\+\_\+\+P\+R\+O\+T\+O\+C\+OL@{E\+X\+\_\+\+P\+R\+O\+T\+O\+C\+OL}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+P\+R\+O\+T\+O\+C\+OL}{EX\_PROTOCOL}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+P\+R\+O\+T\+O\+C\+OL~76	/$\ast$$\ast$ remote error in protocol $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_accb9d6ca49394b476a27d17451c78b62}\label{errvals_8h_accb9d6ca49394b476a27d17451c78b62}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+S\+E\+G\+F\+A\+U\+LT@{E\+X\+\_\+\+S\+E\+G\+F\+A\+U\+LT}}
+\index{E\+X\+\_\+\+S\+E\+G\+F\+A\+U\+LT@{E\+X\+\_\+\+S\+E\+G\+F\+A\+U\+LT}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+S\+E\+G\+F\+A\+U\+LT}{EX\_SEGFAULT}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+S\+E\+G\+F\+A\+U\+LT~139     /$\ast$$\ast$ access to not allowed memory $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a587ae77ee5b3c931c10cb51c19053f11}\label{errvals_8h_a587ae77ee5b3c931c10cb51c19053f11}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+S\+O\+F\+T\+W\+A\+RE@{E\+X\+\_\+\+S\+O\+F\+T\+W\+A\+RE}}
+\index{E\+X\+\_\+\+S\+O\+F\+T\+W\+A\+RE@{E\+X\+\_\+\+S\+O\+F\+T\+W\+A\+RE}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+S\+O\+F\+T\+W\+A\+RE}{EX\_SOFTWARE}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+S\+O\+F\+T\+W\+A\+RE~70	/$\ast$$\ast$ internal software error $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a5801735e57b4c6554d4124742da8e8df}\label{errvals_8h_a5801735e57b4c6554d4124742da8e8df}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+S\+Y\+N\+E\+RR@{E\+X\+\_\+\+S\+Y\+N\+E\+RR}}
+\index{E\+X\+\_\+\+S\+Y\+N\+E\+RR@{E\+X\+\_\+\+S\+Y\+N\+E\+RR}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+S\+Y\+N\+E\+RR}{EX\_SYNERR}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+S\+Y\+N\+E\+RR~2	/$\ast$$\ast$ syntax error $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a0143ccd308d239d00953b99b265e8deb}\label{errvals_8h_a0143ccd308d239d00953b99b265e8deb}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+T\+E\+M\+P\+F\+A\+IL@{E\+X\+\_\+\+T\+E\+M\+P\+F\+A\+IL}}
+\index{E\+X\+\_\+\+T\+E\+M\+P\+F\+A\+IL@{E\+X\+\_\+\+T\+E\+M\+P\+F\+A\+IL}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+T\+E\+M\+P\+F\+A\+IL}{EX\_TEMPFAIL}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+T\+E\+M\+P\+F\+A\+IL~75	/$\ast$$\ast$ temp failure; user is invited to retry $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_a64700ca081061c72709f72adb438be49}\label{errvals_8h_a64700ca081061c72709f72adb438be49}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE@{E\+X\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}}
+\index{E\+X\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE@{E\+X\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}{EX\_UNAVAILABLE}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE~69	/$\ast$$\ast$ service unavailable $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_aa7a7fea7c9887f575533977feccd94c6}\label{errvals_8h_aa7a7fea7c9887f575533977feccd94c6}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+ED@{E\+X\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+ED}}
+\index{E\+X\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+ED@{E\+X\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+ED}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+ED}{EX\_UNSUPPORTED}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+ED~87     /$\ast$$\ast$ unsupported system $\ast$/}
+
+\mbox{\Hypertarget{errvals_8h_abbdf9290893d2876419c13b7b28f5d4e}\label{errvals_8h_abbdf9290893d2876419c13b7b28f5d4e}} 
+\index{errvals.\+h@{errvals.\+h}!E\+X\+\_\+\+U\+S\+A\+GE@{E\+X\+\_\+\+U\+S\+A\+GE}}
+\index{E\+X\+\_\+\+U\+S\+A\+GE@{E\+X\+\_\+\+U\+S\+A\+GE}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+\_\+\+U\+S\+A\+GE}{EX\_USAGE}}
+{\footnotesize\ttfamily \#define E\+X\+\_\+\+U\+S\+A\+GE~64	/$\ast$$\ast$ command line usage error $\ast$/}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{errvals_8h_a0723fcf97b6950d25e2c653313093442}\label{errvals_8h_a0723fcf97b6950d25e2c653313093442}} 
+\index{errvals.\+h@{errvals.\+h}!error\+\_\+what@{error\+\_\+what}}
+\index{error\+\_\+what@{error\+\_\+what}!errvals.\+h@{errvals.\+h}}
+\subsubsection{\texorpdfstring{error\+\_\+what()}{error\_what()}}
+{\footnotesize\ttfamily void error\+\_\+what (\begin{DoxyParamCaption}\item[{int}]{eid }\end{DoxyParamCaption})}
+
+
+
+gives the error message in function of the error code 
+

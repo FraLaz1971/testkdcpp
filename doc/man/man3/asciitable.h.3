@@ -1,0 +1,79 @@
+.TH "asciitable.h" 3 "Fri Apr 16 2021" "Version 0.0.1" "ASCII Table" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+asciitable.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cstdio>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <cstring>\fP
+.br
+\fC#include 'errvals\&.h'\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBASCIITable\fP"
+.br
+.RI "implements basic input/output operations on ascii table dataset "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBLMAXSIZE\fP   64 /* max allowed line length */"
+.br
+.ti -1c
+.RI "#define \fBFSIZE\fP   16     /* max allowed number of characters in a field (cell) include '\\0' */"
+.br
+.ti -1c
+.RI "#define \fBFMAX\fP   16      /* max allowed number of fields (columns) in a row */"
+.br
+.ti -1c
+.RI "#define \fBRMAX\fP   16      /* max allowed number of records (rows) in a file */"
+.br
+.ti -1c
+.RI "#define \fBRS\fP   '\\n'     /* (input) record (row) separator */"
+.br
+.ti -1c
+.RI "#define \fBFS\fP   ' '     /* (input) field (column) separator */"
+.br
+.ti -1c
+.RI "#define \fBORS\fP   '\\n'     /* output record (row) separator */"
+.br
+.ti -1c
+.RI "#define \fBOFS\fP   ','     /* output field (column) separator */"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+(C) 2021 Francesco Lazzarotto  francesco.lazzarotto@iaps.inaf.it \fBThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version\&. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE\&. See the GNU General Public License for more details\&. You should have received a copy of the GNU General Public License along with this program\&. If not, see  http://www.gnu.org/licenses/\&. \fP
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FMAX   16      /* max allowed number of fields (columns) in a row */"
+
+.SS "#define FS   ' '     /* (input) field (column) separator */"
+
+.SS "#define FSIZE   16     /* max allowed number of characters in a field (cell) include '\\0' */"
+
+.SS "#define LMAXSIZE   64 /* max allowed line length */"
+
+.SS "#define OFS   ','     /* output field (column) separator */"
+
+.SS "#define ORS   '\\n'     /* output record (row) separator */"
+
+.SS "#define RMAX   16      /* max allowed number of records (rows) in a file */"
+
+.SS "#define RS   '\\n'     /* (input) record (row) separator */"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ASCII Table from the source code\&.
